@@ -2,22 +2,20 @@
 using namespace std;
 
 int main(){
-    unsigned long long int T,i,A;
+    int T,i,A,B,i2;
     cin>>T;
     for(i=1;i<=T;i++){
-        cin>>A;
-        cout<<"Case "<<i<<": ";
-        if(A%3==0&&A%5!=0){
-            cout<<"Fizz\n";
-        }
-        else if(A%3!=0&&A%5==0){
-            cout<<"Buzz\n";
-        }
-        else if(A%3==0&&A%5==0){
-            cout<<"FizzBuzz\n";
+        cin>>A>>B;
+        if(B%A==0){
+            cout<<B<<"\n";
         }
         else{
-            cout<<"Null\n";
+            for(i2=B;i2>=1;i2--){
+                if(A%i2==0&&B%i2==0){
+                    cout<<i2<<"\n";
+                    break;
+                }
+            }
         }
     }
     return 0;
