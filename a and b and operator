@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int i,t;
+    long long int a,b,m;
+    char c;
+    scanf("%lld",&t);
+    for(i=0;i<t;i++){
+        scanf("%lld %lld %c",&a,&b,&c);
+        if(c=='+') m=a+b;
+        if(c=='-') m=a-b;
+        if(c=='*') m=a*b;
+        if(c=='/') m=a/b;
+        if(c=='%') m=a%b;
+            printf("Case %d: %lld\n",i+1,m);
+        }
+
+    return 0;
+}
