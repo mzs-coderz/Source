@@ -1,9 +1,7 @@
 #include <iostream>
-#include <cstdio>
 using namespace std;
 
 int main(){
-    freopen("D:\\in.txt","r",stdin);
     unsigned long long T,M,N,m[1000],X=0,p[100000],e=0;
     cin>>T;
     while(T--){
